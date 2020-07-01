@@ -1,0 +1,10 @@
+{
+    "iconDefinitions": {
+        "_file_thing_descriptor":{
+            "iconPath": "./icons/td-dark.svg"
+        }
+    },
+    "fileExtensions": {
+        "td.json": "_file_thing_descriptor"
+    }
+}
