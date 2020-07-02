@@ -16,6 +16,14 @@ TD-code provide also some useful code snippets to accelerate Thing Description s
 
 ## Release Notes
 
+### 0.2.3
+Update release notes
+
+### 0.2.2
+
+Fix TD JSONSchema location
+Fix typos in the package description
+
 ### 0.2.1
 
 Fix up minor publishing material
