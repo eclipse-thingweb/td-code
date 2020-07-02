@@ -19,7 +19,7 @@
 					"*td.json",
 					"*td.jsonld"
 				],
-				"url": "./src/TD.schema.json"
+				"url": "./schemas/TD.schema.json"
 			}
 		]
 	},
