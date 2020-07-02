@@ -16,6 +16,10 @@ TD-code provide also some useful code snippets to accelerate Thing Description s
 
 ## Release Notes
 
-### 0.1.0
+### 0.2.1
 
-First release
+Fix up minor publishing material
+
+### 0.2.0
+
+Initial release
