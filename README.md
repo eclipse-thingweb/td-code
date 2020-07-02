@@ -1,6 +1,6 @@
 # TD-code
 
-TD-code is a simple vscode extension that adds W3C Thing Descriptor JSONSchema and some code snippets for `td.json` and `td.jsonld` files.
+TD-code is a simple vscode extension that adds W3C Thing Description JSONSchema and some code snippets for `td.json` and `td.jsonld` files.
 
 ## Features
 
