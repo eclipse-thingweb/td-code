@@ -564,7 +564,19 @@
             "required": [
                 "forms"
             ],
-            "additionalProperties": true
+            "additionalProperties": true,
+            "defaultSnippets": [
+                {
+                    "label": "New Property",
+                    "description": "Add a property affordance",
+                    "body": {
+                        "type": "$1",
+                        "title": "$2",
+                        "description": "$3",
+                        "forms": []
+                    }
+                }
+            ]
         },
         "action_element": {
             "type": "object",
@@ -613,6 +625,19 @@
             "required": [
                 "forms"
             ],
+            "defaultSnippets": [
+                {
+                    "label": "New Action",
+                    "description": "Add a action affordance",
+                    "body": {
+                            "title": "$1",
+                            "description": "$2",
+                            "input": {},
+                            "output": {},
+                            "forms": []
+                    }
+                }
+            ],
             "additionalProperties": true
         },
         "event_element": {
@@ -659,7 +684,21 @@
             "required": [
                 "forms"
             ],
-            "additionalProperties": true
+            "additionalProperties": true,
+            "defaultSnippets": [
+                {
+                    "label": "New Event",
+                    "description": "Add a event affordance",
+                    "body": {
+                        "title": "$1",
+                        "description": "$2",
+                        "subscription": {},
+                        "data": {},
+                        "cancellation": {},
+                        "forms": []
+                    }
+                }
+            ]
         },
         "link_element": {
             "type": "object",
@@ -680,7 +719,25 @@
             "required": [
                 "href"
             ],
-            "additionalProperties": true
+            "additionalProperties": true,
+            "defaultSnippets": [
+                {
+                    "label": "New Link",
+                    "description": "Create a simple link",
+                    "body": {
+                            "href": "$1"
+                    }
+                },
+                {
+                    "label": "Full new link",
+                    "description": "Create a link with type information",
+                    "body": {
+                            "href": "${1}",
+                            "rel": "$2",
+                            "type": "$3"
+                    }
+                }
+            ]
         },
         "securityScheme": {
             "oneOf": [
@@ -960,6 +1017,34 @@
                     "required": [
                         "scheme"
                     ]
+                }
+            ],
+            "defaultSnippets": [
+                {
+                    "label": "New Scheme",
+                    "description": "Create a SecurityScheme",
+                    "body": {
+                        "scheme": "${1|nosec,oauth2,basic,psk,apikey,bearer,digest|}"
+                    }
+                },
+                {
+                    "label":"New basic Scheme",
+                    "description": "Create a Basic SecurityScheme",
+                    "body": {
+                        "scheme": "basic",
+                         "in": "header"
+                    }
+                },
+                {
+                    "label": "New oAuth2 code Scheme",
+                    "description": "Create an oAuth2 SecurityScheme",
+                    "body": {
+                        "scheme": "oauth2",
+                        "flow": "code",
+                        "authorization": "$1",
+                        "token": "$2",
+                        "scopes": []
+                    }
                 }
             ]
         }
