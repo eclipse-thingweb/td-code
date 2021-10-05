@@ -1,0 +1,126 @@
+[
+    {
+        "location": "",
+        "label": "New Thing",
+        "file": "./schemas/TD.schema.json",
+        "description": "A basic Thing Description stub",
+        "body": {
+            "@context": [
+                "http://www.w3.org/ns/td"
+            ],
+            "@type": [
+                "Thing"
+            ],
+            "title": "$1",
+            "securityDefinitions": {
+                "no_sec": {
+                    "scheme": "nosec"
+                }
+            },
+            "security": "no_sec",
+            "actions": {},
+            "properties": {},
+            "events": {}
+        }
+    },
+    {
+        "location": "",
+        "file": "./schemas/TM.schema.json",
+        "label": "New Model",
+        "description": "A basic Thing Model",
+        "body": {
+            "@context": [
+                "http://www.w3.org/ns/td"
+            ],
+            "@type": [
+                "tm:ThingModel"
+            ],
+            "title": "$1",
+            "actions": {},
+            "properties": {},
+            "events": {}
+        }
+    },
+    {
+        "location": "/definitions/property_element",
+        "label": "New Property",
+        "description": "Add a property affordance",
+        "body": {
+            "type": "$1",
+            "title": "$2",
+            "description": "$3",
+            "forms": []
+        }
+    },
+    {
+        "location": "/definitions/action_element",
+        "label": "New Action",
+        "description": "Add an action affordance",
+        "body": {
+            "type": "$1",
+            "title": "$2",
+            "description": "$3",
+            "forms": []
+        }
+    },
+    {
+        "location": "/definitions/event_element",
+        "label": "New Event",
+        "description": "Add a event affordance",
+        "body": {
+            "title": "$1",
+            "description": "$2",
+            "subscription": {},
+            "data": {},
+            "cancellation": {},
+            "forms": []
+        }
+    },
+    {
+        "location": "/definitions/link_element",
+        "label": "New Link",
+        "description": "Create a simple link",
+        "body": {
+            "href": "$1"
+        }
+    },
+    {
+        "label": "Full new link",
+        "location": "/definitions/link_element",
+        "description": "Create a link with type information",
+        "body": {
+            "href": "${1}",
+            "rel": "$2",
+            "type": "$3"
+        }
+    },
+    {
+        "label": "New Scheme",
+        "location": "/definitions/securityScheme",
+        "description": "Create a SecurityScheme",
+        "body": {
+            "scheme": "${1|nosec,oauth2,basic,psk,apikey,bearer,digest|}"
+        }
+    },
+    {
+        "location": "/definitions/securityScheme",
+        "label": "New basic Scheme",
+        "description": "Create a Basic SecurityScheme",
+        "body": {
+            "scheme": "basic",
+            "in": "header"
+        }
+    },
+    {
+        "label": "New oAuth2 code Scheme",
+        "location": "/definitions/securityScheme",
+        "description": "Create an oAuth2 SecurityScheme",
+        "body": {
+            "scheme": "oauth2",
+            "flow": "code",
+            "authorization": "$1",
+            "token": "$2",
+            "scopes": []
+        }
+    }
+]
