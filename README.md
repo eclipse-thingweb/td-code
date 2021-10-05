@@ -15,6 +15,8 @@ TD-code provide also some useful code snippets to accelerate Thing Description s
 ![code snippet](images/tdWoTCodeSnip.gif)
 
 ## Release Notes
+### 0.4.0
+Experimental support for Thing Models
 ### 0.3.0
 Additional snippets for: events,properties,actions,securitySchema,and links
 
