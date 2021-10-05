@@ -2,7 +2,7 @@
 	"name": "td-code",
 	"displayName": "td-code",
 	"description": "Editing Thing Descriptions inside vscode",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"engines": {
 		"vscode": "^1.46.0"
 	},
