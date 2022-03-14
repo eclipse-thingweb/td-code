@@ -15,6 +15,9 @@ TD-code provide also some useful code snippets to accelerate Thing Description s
 ![code snippet](images/tdWoTCodeSnip.gif)
 
 ## Release Notes
+
+### 0.5.0
+Support for 1.1 TD version. 
 ### 0.4.0
 Experimental support for Thing Models
 ### 0.3.0
