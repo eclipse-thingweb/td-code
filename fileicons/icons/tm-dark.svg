@@ -4,7 +4,7 @@
    fill="currentColor"
    version="1.1"
    id="svg4"
-   sodipodi:docname="td-dark.svg"
+   sodipodi:docname="tm-dark.svg"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -21,7 +21,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -70,7 +69,7 @@
        id="tspan827"
        x="4.2603717"
        y="10.23291"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke-width:0.625986">TD</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke-width:0.625986">TM</tspan></text>
   <path
      style="clip-rule:evenodd;fill:#ffffff;fill-opacity:1;fill-rule:evenodd"
      d="M 9.5,1.9999997 12.5,5 h -3 z"
